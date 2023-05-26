@@ -67,6 +67,7 @@
             this.BoxLogin.Name = "BoxLogin";
             this.BoxLogin.Size = new System.Drawing.Size(226, 27);
             this.BoxLogin.TabIndex = 2;
+            this.BoxLogin.TextChanged += new System.EventHandler(this.BoxLogin_TextChanged);
             // 
             // Password1
             // 

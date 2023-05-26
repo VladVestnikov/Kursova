@@ -11,6 +11,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Kursova
 {
@@ -74,6 +75,14 @@ namespace Kursova
             var form = new Form1();
             form.Show();
             this.Hide();
+        }
+
+        private void BoxLogin_TextChanged(object sender, EventArgs e)
+        {
+            if (!int.TryParse(BoxLogin.Text, out _))
+            {
+                BoxLogin.Text = string.Empty;
+            }
         }
     }
 }
